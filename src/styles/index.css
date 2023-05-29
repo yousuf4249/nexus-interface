@@ -111,3 +111,9 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
+@media (max-width:991px) {
+  .width__set{
+    width: 600px !important;
+  }
+  
+}

@@ -52,10 +52,11 @@ const FarmList = ({ farms, term }) => {
 
   return items ? (
     <>
-      <div className={classNames(TABLE_WRAPPER_DIV_CLASSNAME)} style={{overflow:"visible"}}>
+      <div className={classNames(TABLE_WRAPPER_DIV_CLASSNAME)} style={{overflow:"scroll"}}>
         <Frame animate={true}
           level={3}
           corners={3}
+          className="width__set"
           layer='primary'>
           <div className="grid grid-cols-4 min-w-[768px]">
             <div
@@ -95,7 +96,8 @@ const FarmList = ({ farms, term }) => {
         <Frame animate={true}
           level={3}
           corners={3}
-          className="mt-3"
+          
+          className="mt-3 width__set"
           layer='primary'>
         <div className="divide-y divide-dark-900  min-w-[768px]">
           <InfiniteScroll
